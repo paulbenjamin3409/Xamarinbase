@@ -3,3 +3,9 @@
 ################################################################################
 
 /Droid/obj/Debug
+/Shared/obj/Debug
+/packages
+/Droid/bin/Debug
+/Droid/obj
+/Shared/bin/Debug
+/.vs/Xamarinbase/v14

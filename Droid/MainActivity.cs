@@ -1,18 +1,23 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Shared;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
 
 namespace Droid
 {
-    [Activity(Label = "Droid", MainLauncher = true)]
-    public class MainActivity : Activity
+    [Activity(Label = "Xamarin Base", MainLauncher = true)]
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            Forms.Init(this, savedInstanceState);
+
+            LoadApplication(new App());
+
         }
     }
 }

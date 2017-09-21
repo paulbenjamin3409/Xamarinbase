@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{1A2A5F88-889B-4DC4-AD05-EE9235D053D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Droid", "Droid\Droid.csproj", "{2D735AC9-84E9-4539-B5CD-972F8D1B8B26}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A2A5F88-889B-4DC4-AD05-EE9235D053D2} = {1A2A5F88-889B-4DC4-AD05-EE9235D053D2}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
